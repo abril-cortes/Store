@@ -1,0 +1,62 @@
+.navbar {
+    background-color: black;
+    height: 90px;
+    .container-fluid {
+        background-color: black;
+        .navbar__img {
+            height: 55px;
+            transition: all 1s;
+            &:hover {
+                transform: scale(1.1, 1.1);
+            }
+        }
+        ul {
+            padding-bottom: 10px;
+            .nav-link {
+                font-family: 'PT Serif', serif;
+                font-style: italic;
+                font-size: 17px;
+                margin-top: 10px;
+                margin-right: 20px;
+                color: $cream;
+                transition: all 1s;
+                &:hover {
+                    color: $background-color;
+                }
+            }
+            .dropdown-menu {
+                font-family: 'PT Serif', serif;
+                font-style: italic;
+                font-size: 15px;
+                background-color: black;
+                transition: all 1s;
+                .dropdown-item {
+                    color: $just-white;
+                    transition: all 1s;
+                    &:hover {
+                        color: black;
+                    }
+                }
+            }
+        }
+        form {
+            margin-bottom: 10px;
+            img {
+                margin-right: 10px;
+                width: 20px;
+            }
+            input {
+                width: 150px;
+                border: 0;
+                background-color: black;
+                margin-right: 20px;
+                border-bottom: 1px solid #e1d3bb;
+                color: $just-white;
+            }
+        }
+    }
+        
+}
+    
+
+

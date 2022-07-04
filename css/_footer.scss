@@ -1,0 +1,38 @@
+footer {
+    grid-area: footer;
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+footer section {
+    display: block;
+    width: 100%;
+    align-items: center;
+}
+.footer__left {
+    display: flex;
+    justify-content: center;
+}
+.footer__left p  {
+    color: $cream;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 20px;
+    padding: 0 40px;
+}
+.footer__social--container {
+    display: flex;
+    margin: 10px 10px;
+    justify-content: center;
+}
+.footer__right a {
+    text-decoration: none;
+    margin: 20px;
+} 
+.footer__right a img {
+    transition: all 0.5s;
+}
+.footer__right a img:hover {
+    transform: scale(1.2, 1.3);
+}
