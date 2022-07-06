@@ -1,7 +1,8 @@
+@import "responsive";
 @import "vars";
 @import "nav";
 @import "footer";
-@import "responsive";
+@import "apparel";
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Tangerine:wght@400;700&display=swap');
 * {
@@ -19,7 +20,7 @@ body {
     font-family: 'PT Serif', serif;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto 10%;
+    grid-template-rows: 10% auto 10%;
     grid-template-areas: 
     "header"
     "main"
@@ -86,7 +87,11 @@ header {
             .img_container {
                 width: 100%;
                 height: auto;
-                margin: 0;
+                margin-bottom: 10px;
+                &:hover {
+                 box-shadow: 5px 3px 4px $dark-brown;
+                 background-color: $just-white;  
+                }
                 img {
                     width: 250px;
                 }
@@ -118,4 +123,44 @@ header {
             }
         }
     }
+}
+
+/*seciones fotos*/
+
+.main_img--container {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    .row {
+        width: auto;
+        .col {
+            padding: 0;
+            .img_container {
+                position: relative;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    img {
+                       width: stretch;
+                    }
+                }
+                .text_container {
+                    position: absolute;
+                    top: 90%;
+                    left: 60%;
+                    transform: translate(-90%, -60%);
+                    p {
+                        font-family: 'PT Serif', serif;
+                        font-style: italic;
+                        color: $cream;
+                        font-size: 3rem;
+                        transition: all 1s;
+                        &:hover {
+                            color: $just-white;
+                        }
+                    }
+                }   
+           }
+        }
+   }
 }
