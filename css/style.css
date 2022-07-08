@@ -65,6 +65,7 @@
   height: auto;
   /*margin: 0 30px;*/
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 .main_bread--container nav {
   margin: 0 30px;
@@ -93,7 +94,7 @@
 }
 .main_all--container .row .product_container .img_container {
   width: 100%;
-  height: auto;
+  height: 300px;
   margin-bottom: 10px;
 }
 .main_all--container .row .product_container .img_container:hover {
@@ -101,6 +102,20 @@
   background-color: #fff;
 }
 .main_all--container .row .product_container .img_container img {
+  width: 250px;
+}
+.main_all--container .row .product_kids--container {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+.main_all--container .row .product_kids--container .img_kids--container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.main_all--container .row .product_kids--container .img_kids--container img {
   width: 250px;
 }
 .main_all--container .row .text_container {
@@ -281,7 +296,7 @@ header {
   width: 150px;
   height: 30px;
   margin: auto;
-  padding-top: 5px;
+  padding-top: 10px;
   margin-bottom: 30px;
   font-size: 14px;
   font-weight: 600;
