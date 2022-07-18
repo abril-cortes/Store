@@ -233,13 +233,15 @@ header {
 #carouselExampleSlidesOnly {
   display: flex;
   justify-content: end;
-}
-#carouselExampleSlidesOnly .carousel-item img {
-  height: 100vh;
+  /*.carousel-item {
+      img {
+          height: ;
+      }
+  }*/
 }
 #carouselExampleSlidesOnly .carousel-caption {
   justify-content: end;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   text-align: right;
   font-family: "PT Serif", serif;
   color: #e1d3bb;
